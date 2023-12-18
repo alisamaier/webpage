@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alisa's Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles specific to this page */
+        .course-details {
+            display: none; /* Hide course details by default */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="index.html#aboutMe">About Me</a></li>
+					<li><a href="courses.html">Teaching</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="courses">
+                <h2>Courses I'm teaching this year</h2>
+                <div class="course">
+                    <h3>Probability Theory and Mathematical Statistics</h3>
+                    <p><a href="#" class="course-details-toggle">View Details</a></p>
+                    <div class="course-details">
+                        <p>The final grade will be computed as follows:</p>
+                        <ul>
+                            <li>Final written exam at the end of the semester: 50%</li>
+                            <li>Evaluation at the seminar: 25%</li>
+                            <li>Evaluation of lab works: 25%</li>
+                        </ul>
+
+                        <p>Details about evaluation:</p>
+                        <ul>
+                            <li>Evaluation in seminar: consists of attendance, class participation, homework, bonus problems. All these will produce a grade from 1 to 10 for evaluation in seminar.</li>
+                            <li>Each week there will be a lab assignment, closely related to the topics presented at the lecture that week. The assignment will be discussed in class. Students can work in groups or individually. Lecture and seminar notes will be necessary for completion of the lab assignment.</li>
+                            <li>Evaluation for lab works will consist of attendance, class participation, and a lab exam (held during the last week of classes). All these will produce a grade from 1 to 10 for evaluation of lab works.</li>
+                            <li>The results of the written exam will be announced the day of the exam, as well as the final grade.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <h3>Data Structures and Algorithms</h3>
+                    <p><a href="#" class="course-details-toggle">View Details</a></p>
+                    <div class="course-details">
+                        <p>The final grade will be computed as follows:</p>
+						<ul>
+                            <li>Final written exam at the end of the semester: 70%</li>
+                            <li>Semester Activity: 10%</li>
+                            <li>Project: 20%</li>
+                        </ul>
+						<p>Minimal passing criteria:</p>
+						<ul>
+                            <li>minimum grade of 5 at the written exam</li>
+                            <li>minimum final grade 5</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="news">
+                <h2>News</h2>
+                <div class="news-item">
+                    <h3>Exciting Announcement</h3>
+                    <p>Welcome students! We have an exciting announcement to make. Stay tuned for details.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Upcoming Events</h3>
+                    <p>Check out the upcoming events and seminars in our department. Don't miss out!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Alisa's Teaching Page</p>
+        </div>
+    </footer>
+    <script>
+    // Get all course detail links
+    const courseDetailLinks = document.querySelectorAll(".course-details-toggle");
+
+    // Add click event listeners to toggle course details
+    courseDetailLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const courseDetails = this.parentElement.nextElementSibling;
+            courseDetails.classList.toggle("show"); // Toggle the class to show/hide course details
+        });
+    });
+</script>
+</body>
+</html>
