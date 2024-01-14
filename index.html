@@ -18,42 +18,42 @@
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
                 <li><a href="courses.html">Teaching</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <section id="aboutMe">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">Hello, I'm a dedicated teaching assistant specializing in the fascinating realms of Probability Theory and Mathematical Statistics, as well as Data Structures and Algorithms. I'm passionate about these subjects and thrive on sharing my knowledge and insights with students.</p>
-                    <p class="about-description">With a strong foundation in these fields, I'm here to help you unravel the intricacies of probability, statistics, and the fundamental principles that underlie data structures and algorithms. Whether you're grappling with complex probability distributions or diving deep into efficient data manipulation, I'm here to guide you every step of the way.</p>
-                    <p class="about-description">My commitment extends beyond the classroom. I'm eager to assist budding statisticians and computer scientists in preparing for their academic challenges and future careers. If you have questions, seek guidance, or simply want to explore the exciting world of data and computation, please don't hesitate to reach out.</p>
-                </div>
+     <section id="homepage">
+            <!-- Photo 1 with quote -->
+            <div id="photo1" class="homepage-photo" data-info="Quote of the Day: What you do today can improve all your tomorrows.">
+                <img src="photo1.jpg" alt="Photo 1">
             </div>
-        </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:alisa.maier@stud.ubbcluj.ro">alisa.maier@stud.ubbcluj.ro</a></p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/alisa.maier/?locale=ro_RO" target="_blank">
-                    <img src="facebook.svg" alt="Facebook Logo" class="social-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/alisa-maier-a953331b2/" target="_blank">
-                    <img src="linkedin.svg" alt="LinkedIn Logo" class="social-icon">
-                </a>
+            <!-- Photo 2 with the week -->
+            <div id="photo2" class="homepage-photo" data-info="Current Week: 14">
+                <img src="photo2.jpg" alt="Photo 2">
             </div>
-        </section>
+
+            <!-- Photo 3 with link to news -->
+            <div id="photo3" class="homepage-photo" onclick="goToNews()">
+                <img src="photo3.webp" alt="Photo 3">
+            </div>
+		</section>
     </main>
     <footer>
         <div class="container">
             <p>&copy; 2023 Alisa's Teaching Page</p>
         </div>
     </footer>
+	
+	<script>
+        function goToNews() {
+            // Replace with code to navigate to the news section for Photo 3
+            window.location.href = "courses.html#news";
+        }
+    </script>
 </body>
 </html>
